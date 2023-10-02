@@ -1,0 +1,234 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+  font-family: 'Shantell Sans', cursive;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(coverimg4.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+ 
+}
+
+
+
+.head2
+  {
+    font-family: 'Shantell Sans', cursive;
+    background: linear-gradient(to right, #FFF 20%, #FF0 40%, #FF0 60%, #FFF 80%);
+   
+    
+    color: #000;
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+
+.mainbox1
+{
+      width: 1100px;
+      display: flex;
+      /* background-color: #fff; */
+      /* height: 500px; */
+    backdrop-filter: blur(0px);
+
+    
+      position: relative;
+      box-shadow: 10px 15px 25px black;
+  
+      
+}
+
+.txtzone
+{
+    width: 60%;
+    backdrop-filter: blur(10px);
+}
+.logo
+{
+  width: 40%;
+  background-image: url(img44.jpg);
+  background-size: cover;
+  background-position: -220px 0;
+  background-repeat: no-repeat;
+}
+
+.txtzone
+ {
+    /* background: rgba(68, 0, 255, 0.25); */
+    box-shadow: 0px 0px 50px 0 rgba(251, 255, 0, 0.20); 
+    backdrop-filter: blur( 1px );
+    transition:1s;
+    animation: txte 20s linear infinite;
+    padding: 50px 70px;
+    text-align: center;
+    
+} 
+.txtzone input[type="text"]:hover,.txtzone input[type ="password"]:hover
+{
+	width: 535px;
+	border-color: #2ecc71;
+    transform: scale(1.2);
+    border-radius: 30px;
+}
+@keyframes txt
+ {
+   0%
+   {
+    filter: hue-rotate(0deg);
+   }
+   50%
+   {
+    filter: hue-rotate(360deg);
+    transition: 10s;
+   }
+   100%
+   {
+    filter: hue-rotate(-360deg);
+   }    
+}
+.btns
+{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+.btns a 
+{
+    padding: 10px 30px;
+    background: rgba(68, 0, 255, 10);
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.btns a:first-child
+{
+	border-right: 1px solid lightgrey;
+}
+.btns a.active
+{
+	color: #eeff00;
+}
+.datastore
+{
+  margin: 15px 0;
+  position: relative;
+  
+}
+.datastore input
+{
+    width: 100%;
+    font-size: 18px;
+    padding: 15px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 3px;
+    transition: 1s;
+
+
+}
+/* .datastore input:focus
+{
+    outline: none;
+    cursor: auto;
+} */
+.datastore input::placeholder
+{
+    font-size: 16px;
+    padding: 10px;
+    
+}
+.datastore i
+{
+    position: absolute;
+    
+    top:15px;
+    right: 15px;
+}
+.flex
+{
+    display: flex;
+    justify-content: flex-start;
+}
+.datastore input[type="checkbox"]
+{
+    width: auto;
+    margin-right: 10px;
+
+}
+.frm_btn
+{
+    text-align: left;
+    
+    
+
+}
+.frm_btn input[type="submit"]
+{
+	padding: 15px 30px;
+	border: none;
+	font-size: 18px;
+	letter-spacing: 2px;
+background:linear-gradient(red,blue);
+animation: rgb 5s linear infinite;
+	color: white;
+}
+@keyframes rgb
+{
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-20px);}
+	60% {transform: translateY(-30px);}
+}
+.txtzone .last
+{
+    margin-top: 20px;
+    color: white;
+
+}
+.txtzone .last a
+{
+    color: black;
+	text-decoration: none;
+    animation: blink 1s linear infinite;
+}
+@keyframes blink
+{
+        0%
+        {
+          opacity: 0;
+        }    
+        50%
+        {
+            opacity: 1;       
+            color: rgb(255, 0, 0);
+       
+        }    
+        100%
+        {
+          opacity: 0;    
+        }    
+}
+
+.logo p
+{  
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+.flex label
+{
+    color: #FFF;
+}
